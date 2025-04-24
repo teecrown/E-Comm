@@ -5,7 +5,7 @@ import Home from "../../Pages/Home/Home";
 import Product from "../../Pages/Productpage/Product";
 import Profile from '../../assets/profile.png'
 import Cart from '../../assets/Cart2.png'
-import SearchIcon from '../../assets/Search-icon.png'
+import SearchIcon from '../../assets/search-icon.png'
 const Header = () => {
   return (
     <div className="whole">
