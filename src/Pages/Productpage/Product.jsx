@@ -1,7 +1,7 @@
 import React from "react";
 import "./Product.css";
 import Bag from "../../assets/bag2.png";
-import Yellow from "../../assets/Yellow.png";
+import Yellow from "../../assets/yellow.png";
 import Red from "../../assets/Red.png";
 
 const Product = () => {
