@@ -1,10 +1,10 @@
 import React from "react";
 import "./Footer.css";
-import Logo from "../../assets/Icon.png";
+import Icon from "../../assets/Icon.png";
 import fcb from "../../assets/facebook.png";
 import twitter from "../../assets/twitter.png";
 import Wunion from "../../assets/Western-union.png";
-import Paypal from "../../assets/paypal.png";
+import Paypal from "../../assets/Paypal.png";
 import Visa from "../../assets/visalogo.png";
 import Master from "../../assets/Mcard.png";
 
@@ -14,7 +14,7 @@ function Footer() {
       <div className="footer-content-top">
         <div>
           <div className="logo-footer">
-            <img src={Logo} />
+            <img src={Icon} />
             <p className="logo">E-Comm</p>
           </div>
 
