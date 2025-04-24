@@ -1,0 +1,43 @@
+.mom {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  font-weight: 300px;
+  font-size: 20px;
+  color: #262626;
+}
+
+.Navflex {
+  padding-top: 26px;
+  display: flex;
+  justify-content: space-between;
+  gap: 311px;
+  
+}
+
+.logoflex {
+  width: 134px;
+  height: 44px;
+  margin-left: 100px;
+  margin-top: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.li {
+  width: 780.49px;
+  height: 36px;
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+li span {
+  color: #40bfff;
+  
+}
+

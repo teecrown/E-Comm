@@ -1,0 +1,131 @@
+.cart-header {
+  background-color: rgb(253, 252, 250);
+  height: 51px;
+  
+  align-content: center;
+  justify-items: center;
+  margin-top: 50px;
+  margin-bottom: 46px;
+  font-family: Proxima Nova;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 1.5px;
+}
+
+span {
+  color: rgba(51, 160, 255, 1);
+}
+.cart-product {
+  display: flex;
+  justify-content: space-between;
+  width: 1256px;
+  height: 55px;
+  padding-left: 100px;
+  padding-right: 138px;
+  margin-top: 46px;
+  margin-bottom: 20px;
+  background-color: rgb(253, 252, 250);
+}
+.cart-product-flex {
+  background-color: rgb(253, 252, 250);
+  display: flex;
+  justify-content: space-between;
+  gap: 110px;
+}
+.cart-product-flex1 {
+  background-color: rgb(253, 252, 250);
+  display: flex;
+  justify-content: space-between;
+  gap: 110px;
+  border-top: 1px solid rgba(246, 247, 248, 1);
+}
+.image-flex {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding-left: 80px;
+  padding-top: 30px;
+}
+.price-qty {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 168px;
+  align-items: center;
+ 
+}
+
+/* label {
+  padding: 50px;
+} */
+
+input {
+  height: 60px;
+  width: 271px;
+  padding: 5px;
+}
+.redeem {
+  width: 118px;
+  height: 60px;
+  background-color: rgba(51, 160, 255, 1);
+}
+
+.flex-shipping {
+  width: 477px;
+
+  display: flex;
+  justify-content: space-between;
+  /* gap: 60px; */
+  padding-right: 181px;
+}
+.flex-shipping p {
+  padding-bottom: 50px;
+}
+.input-search {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+  margin-left: 30px;
+}
+.flex-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+  gap: 80px;
+  margin-right: 181px;
+  border-top: 1px solid ;
+}
+.booking {
+  margin-left: 789px;
+}
+.btn {
+  color: white;
+  background-color: rgba(51, 160, 255, 1);
+  height: 60px;
+  width: 301px;
+  margin-top: 20px;
+  margin-bottom: 155px;
+  /* border-radius: 10px; */
+  border: 0px;
+}
+.btn-modal{
+  color: white;
+  background-color: rgba(51, 160, 255, 1);
+  height: 60px;
+  width: 301px;
+  margin-top: 20px;
+  margin-bottom: 155px;
+  border-radius: 10px;
+  border: 0px;
+}
+.increase{
+  background-color: rgba(246, 247, 248, 1);
+  width: 70px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  /* align-content: center; */
+  word-spacing: 12px;
+  padding: 5px;
+}

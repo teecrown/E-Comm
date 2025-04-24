@@ -1,0 +1,22 @@
+.blueSection{
+    margin-top: 90px;
+        height: 600px;
+    background-color: #40BFFF;
+}
+.Blueflex{
+    display: flex;
+    justify-content: space-between;
+
+}
+.bluewords{
+    padding-left: 105px;
+    padding-top: 168px;
+    color: white;
+
+}
+.blueshoe{
+
+    margin-top: -92px;
+    
+    margin-right: 20px;
+}

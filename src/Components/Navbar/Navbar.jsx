@@ -1,0 +1,30 @@
+import React from "react";
+import "./Navbar.css";
+import { Link } from "react-router";
+import Logo from "../../assets/icon.png";
+// import Home from "../../Pages/Home/Home";
+
+const Navbar = () => {
+  return (
+    <div className="mom">
+      <div className="Navflex">
+        <div className="logoflex">
+          <img src={Logo} />
+          <p className="logo">E-Comm</p>
+        </div>
+        <div className="li">
+          <span>
+            {" "}
+            <Link to="/"> Home </Link>
+          </span>
+          <li>BAG</li>
+          <li>SNEAKERS</li>
+          <li>BELTS</li>
+          <li>CONTACT</li>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;

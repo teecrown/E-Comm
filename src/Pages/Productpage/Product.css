@@ -1,0 +1,77 @@
+.flexbagshoe {
+  display: flex;
+  margin-top: -180px;
+  margin-left: 50px;
+  padding-right: 142px;
+  width: 400px;
+}
+.flexbagshoe img{
+  width: 380px;
+}
+.upper {
+  position: absolute;
+  padding-left: 30px;
+  margin-top: 30px;
+}
+s {
+  font-family: Poppins;
+  color: grey;
+  text-decoration: line-through;
+  font-family: Poppins;
+  font-size: 14px;
+}
+
+.uppertext {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-left: 30px;
+  margin-top: 30px;
+  /* width: 350px; */
+
+}
+
+.current-price {
+  color: #40bfff;
+  font-family: Raleway;
+  font-size: 30px;
+}
+
+.percent {
+
+  position: absolute;
+  margin-top: 300px;
+  display: flex;
+  gap: 8px;
+  margin-left: 155px;
+}
+
+
+.current-priceNike {
+  font-family: Raleway;
+  font-size: 30px;
+  padding-left: 196px;
+  margin-top: 200px;
+  color: #40bfff;
+}
+
+/* .strike-thru {
+  color: grey;
+  text-decoration: line-through;
+  font-family: Poppins;
+  font-weight: 700px;
+  font-size: 16px;
+} */
+.discount {
+  font-family: Poppins;
+  font-size: 16px;
+
+  color: red;
+}
+.oldpercent {
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  gap: 109px;
+}
