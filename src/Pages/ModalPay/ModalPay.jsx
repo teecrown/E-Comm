@@ -110,14 +110,26 @@ import { Modal } from "antd";
 import "./ModalPay.css";
 
 const ModalPay = ({ isModalOpen, handleOk, handleCancel }) => {
-  const [showMe, setShowMe] = useState(false)
-  const [showNext, setShowNext] = useState(true)
+  const [showMe, setShowMe] = useState(true);
+  const [showNext, setShowNext] = useState(false)
+  const [showCVV, setShowCVV] = useState(false)
+
+  const handlePayment = () => {
+    setShowMe(false);
+    setShowNext(true)
+  }
+  const handleSuccess =() =>{
+    setShowMe(false);
+    setShowNext(false)
+    setShowCVV(true)
+  }
   return (
     <Modal
       // title="Basic Modal"
       open={isModalOpen}
       onOk={handleOk}
       onCancel={handleCancel}
+      footer={null}
       width="1021px"
     >
       {/* <div className="modal-content"> */}
@@ -185,20 +197,32 @@ const ModalPay = ({ isModalOpen, handleOk, handleCancel }) => {
               required
             />
           </div>
-        </div>
 
+        </div>
+        <button type="submit" onClick={handlePayment}>Go To Payment</button>
       </div>}
       {
-        showNext && <div>
-
-        </div>
-      }
-      </>
-        {/* <label htmlFor="expiryDate">Expiry Date:</label>
+        showNext && <div> 
+          I am moving to the next page
+           <label htmlFor="expiryDate">Expiry Date:</label>
           <input type="text" id="expiryDate" name="expiryDate" required />
           <label htmlFor="cvv">CVV:</label>
           <input type="text" id="cvv" name="cvv" required />
-          <button type="submit">Go To Payment</button> */}
+          <button type="submit" onClick={handleSuccess}> Confirm </button> 
+       </div>
+        
+      }
+      {
+        showCVV && <div>
+          <label htmlFor="cvv">CVV:</label>
+          <input type="text" id="cvv" name="cvv" required />
+          
+        </div>
+        }
+      </>
+        {/* <label htmlFor="expiryDate">Expiry Date:</label>
+          <input type="text" id="expiryDate" name="expiryDate" required />
+        <button type="submit">Go To Payment</button> */}
       {/* </div> */}
     </Modal>
   );
