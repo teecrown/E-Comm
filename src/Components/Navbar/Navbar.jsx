@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router";
-import Logo from "../../assets/Icon.png";
+import Icon from "../../assets/Icon.png";
 // import Home from "../../Pages/Home/Home";
 
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className="mom">
       <div className="Navflex">
         <div className="logoflex">
-          <img src={Logo} />
+          <img src={Icon} />
           <p className="logo">E-Comm</p>
         </div>
         <div className="li">
