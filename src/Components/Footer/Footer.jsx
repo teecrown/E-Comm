@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import Logo from "../../assets/icon.png";
+import Logo from "../../assets/Icon.png";
 import fcb from "../../assets/facebook.png";
 import twitter from "../../assets/twitter.png";
 import Wunion from "../../assets/Western-union.png";
