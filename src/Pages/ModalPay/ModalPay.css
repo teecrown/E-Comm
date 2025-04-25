@@ -7,13 +7,9 @@
     z-index: 9999;
 } */
 
-     
-
-
-
 .modal-content {
   margin-top: 16px;
-  /* margin: 8px 16px; */
+
   background-color: rgba(255, 255, 255, 1);
   color: #40bfff;
   border: none;
@@ -95,17 +91,17 @@
   margin-left: 330px;
   border-radius: 10px;
 }
-.cvv-flex{
-    display: flex;
-    justify-content: space-between;
+.cvv-flex {
+  display: flex;
+  justify-content: space-between;
 }
-#cvv-flex{
-    width: 161px;
+#cvv-flex {
+  width: 161px;
 }
-.credit-cardflex{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+.credit-cardflex {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 .Delivery {
   padding: 20px;
@@ -127,17 +123,14 @@
 .check-box {
   width: 24px;
   height: 24px;
-  /* display: block; */
-  /* justify-content: center; */
-  /* align-content: center; */
-  /* gap: 10px; */
+ 
 }
 .label-group {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.success-icon{
+.success-icon {
   display: flex;
   justify-content: center;
   align-items: center;
