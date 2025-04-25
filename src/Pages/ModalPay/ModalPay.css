@@ -31,6 +31,7 @@
   width: 36px;
   height: 36px;
   padding: 8px;
+  color: white;
   background-color: #40bfff;
   border-radius: 50%;
 }
@@ -41,6 +42,7 @@
   width: 36px;
   height: 36px;
   padding: 8px;
+  color: white;
   background-color: rgba(223, 222, 222, 1);
   border-radius: 50%;
 }
@@ -134,4 +136,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.success-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

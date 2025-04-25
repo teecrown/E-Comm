@@ -3,6 +3,7 @@ import { Modal } from "antd";
 import "./ModalPay.css";
 import Paypal from "../../assets/Paypal.png"
 import Card from "../../assets/creditCard.png"
+import SuccessIcon from "../../assets/Success-icon.png"
 // import { Link } from "react-router";
 
 const ModalPay = ({ isModalOpen, handleOk, handleCancel }) => {
@@ -19,6 +20,14 @@ const ModalPay = ({ isModalOpen, handleOk, handleCancel }) => {
     setShowNext(false)
     setShowCVV(true)
   }
+  const handleComplete = () => {
+    setShowCVV(false)
+    handleOk()
+  }
+  // const handleBack = () => {
+  //   setShowMe(true);
+  //   setShowNext(false)
+  // }
   return (
     <Modal
       // title="Basic Modal"
@@ -105,7 +114,7 @@ const ModalPay = ({ isModalOpen, handleOk, handleCancel }) => {
         showNext && 
         <div className="modal-content"> 
           <h2> Make Payment </h2>
-        <h4 className="prog-flex"> <span className="progress-bar">1</span>-<span className="progress-bar2">2</span>-<span className="progress-bar2">3</span></h4>
+        <h4 className="prog-flex"> <span className="progress-bar">1</span>-<span className="progress-bar">2</span>-<span className="progress-bar2">3</span></h4>
         <br />
           <div className="credit-cardflex" >
             <div><img src= {Card} /></div>
@@ -128,17 +137,17 @@ const ModalPay = ({ isModalOpen, handleOk, handleCancel }) => {
         
       }
       {
-        showCVV && <div>
-          <label htmlFor="cvv">CVV:</label>
-          <input type="text" id="cvv" name="cvv" required />
+        showCVV && <div className="modal-content">
+            <h2> Make Payment </h2>
+        <h4 className="prog-flex"> <span className="progress-bar">1</span>-<span className="progress-bar">2</span>-<span className="progress-bar">3</span></h4>
+        <br />
+          <div className="success-icon"> <img src={SuccessIcon}/></div>
+          <button className="btn" type="submit" onClick={handleComplete}> Success </button> 
           
         </div>
         }
       </>
-        {/* <label htmlFor="expiryDate">Expiry Date:</label>
-          <input type="text" id="expiryDate" name="expiryDate" required />
-        <button type="submit">Go To Payment</button> */}
-      {/* </div> */}
+       
     </Modal>
   );
 };
