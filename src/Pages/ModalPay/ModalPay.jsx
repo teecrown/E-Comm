@@ -133,7 +133,7 @@ const ModalPay = ({ isModalOpen, handleOk, handleCancel }) => {
             <br />
             <div className="credit-cardflex">
               <div>
-                <img src={Card} />
+                <img src= {Card} />
               </div>
               <div>
                 <div>
