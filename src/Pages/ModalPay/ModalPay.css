@@ -7,60 +7,131 @@
     z-index: 9999;
 } */
 
-.modal-content{
-    
-    margin-top: 16px;
-    padding: 8px 16px;
-    background-color: rgba(255, 255, 255, 1);
-    color: white;
-    border: none;
-    border-radius: 4px;
+     
+
+
+
+.modal-content {
+  margin-top: 16px;
+  /* margin: 8px 16px; */
+  background-color: rgba(255, 255, 255, 1);
+  color: #40bfff;
+  border: none;
+  border-radius: 4px;
+}
+.modal-content h2 {
+  display: flex;
+  justify-content: center;
+  /* color: red; */
+}
+.progress-bar {
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  background-color: #40bfff;
+  border-radius: 50%;
+}
+.progress-bar2 {
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  background-color: rgba(223, 222, 222, 1);
+  border-radius: 50%;
 }
 
-.mother-flex{
-    display:  flex;
-    justify-content: space-between;
-    gap: 30px;
+.prog-flex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  /* background-color: red; */
 }
-.display-block{
-    display: block;
+.mother-flex {
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-between;
+
+  gap: 30px;
 }
-.modal-imput{
-    padding: 20px;
-    margin-top: 20px;
-    background-color: rgba(223, 222, 222, 1);
-    width: 381px;
-    height: 50px;
-    border-radius: 10px;
-    border: 0px;
+.mother-flex h3 {
+  margin-top: 25px;
+  padding-left: 20px;
 }
-.Delivery{
-    padding: 20px;
-    margin-top: 20PX;
-    width: 381px;
-    height: 122px;
-    border-radius: 10px;
-    background-color: rgba(223, 222, 222, 1);
-    border: 0px;
+.label-group {
+  color: black;
+  /* border: 1px solid; */
+  padding: 0 5px;
+  height: 56px;
 }
-.modal{width: 1021px;
-    height: 792px;
+#checked {
+  background-color: rgba(223, 222, 222, 1);
+}
+#flexpayment {
+  display: inline-flex;
+  gap: 2px;
+}
+.display-block {
+  display: block;
+}
+.modal-imput {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: rgba(223, 222, 222, 1);
+  width: 381px;
+  height: 50px;
+  border-radius: 10px;
+  border: 0px;
+}
+.btn {
+  margin-left: 330px;
+  border-radius: 10px;
+}
+.cvv-flex{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    background-color: aquamarine;
-}
-.check-box{
-    width: 24px;
-    height: 24px;
-    /* display: block; */
-    /* justify-content: center; */
-    /* align-content: center; */
-    /* gap: 10px; */
-}
-.label-group{
-    display: flex;
-    align-items: center;
     justify-content: space-between;
+}
+#cvv-flex{
+    width: 161px;
+}
+.credit-cardflex{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.Delivery {
+  padding: 20px;
+  margin-top: 20px;
+  width: 381px;
+  height: 122px;
+  border-radius: 10px;
+  background-color: rgba(223, 222, 222, 1);
+  border: 0px;
+}
+.modal {
+  width: 1021px;
+  height: 792px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+}
+.check-box {
+  width: 24px;
+  height: 24px;
+  /* display: block; */
+  /* justify-content: center; */
+  /* align-content: center; */
+  /* gap: 10px; */
+}
+.label-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

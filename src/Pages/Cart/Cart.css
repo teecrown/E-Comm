@@ -1,7 +1,6 @@
 .cart-header {
   background-color: rgb(253, 252, 250);
   height: 51px;
-  
   align-content: center;
   justify-items: center;
   margin-top: 50px;
@@ -53,7 +52,6 @@ span {
   justify-content: space-between;
   margin-right: 168px;
   align-items: center;
- 
 }
 
 /* label {
@@ -73,7 +71,6 @@ input {
 
 .flex-shipping {
   width: 477px;
-
   display: flex;
   justify-content: space-between;
   /* gap: 60px; */
@@ -105,7 +102,7 @@ input {
   height: 60px;
   width: 301px;
   margin-top: 20px;
-  margin-bottom: 155px;
+  /* margin-bottom: 155px; */
   /* border-radius: 10px; */
   border: 0px;
 }
