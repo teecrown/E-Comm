@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Modal } from "antd";
 import "./ModalPay.css";
 import Paypal from "../../assets/Paypal.png";
-import Card from "../../assets/creditCard.png";
+import Card from "../../assets/CreditCard.png";
 import SuccessIcon from "../../assets/Success-icon.png";
 // import { Link } from "react-router";
 
