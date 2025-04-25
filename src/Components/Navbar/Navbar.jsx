@@ -9,8 +9,8 @@ const Navbar = () => {
     <div className="mom">
       <div className="Navflex">
         <div className="logoflex">
-          <img src={Logo} />
-          <p className="logo">E-Comm</p>
+         <img src={Logo} /> 
+          <p className="logo"> <Link to="/">E-Comm</Link></p>
         </div>
         <div className="li">
           <span>
