@@ -1,15 +1,15 @@
 import React from "react";
 import "./Header.css";
 import { Link } from "react-router";
-import Home from "../../Pages/Home/Home";
-import Product from "../../Pages/Productpage/Product";
+// import Home from "../../Pages/Home/Home";
+// import Product from "../../Pages/Productpage/Product";
 import Profile from '../../assets/profile.png'
 import Cart from '../../assets/Cart2.png'
 import SearchIcon from '../../assets/search-icon.png'
 const Header = () => {
   return (
-    <div className="whole">
-      <div className="headflex">
+    <div className="mom">
+      <div className="headerflex">
         <div className="leftflex">
           <p>EN▾</p>
           <p> USD▾</p>

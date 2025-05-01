@@ -9,8 +9,17 @@
   margin-top: 63px;
   display: flex;
   justify-content: center;
+  
 }
-
+.li-BestSeller {
+cursor: pointer;
+}
+.li-BestSeller:hover {color: #000;
+  text-decoration: underline;
+}
+.cardcontainer img{
+  cursor: pointer;
+}
 .productFlex {
   display: flex;
   justify-content: center;

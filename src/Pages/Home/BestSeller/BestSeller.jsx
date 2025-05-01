@@ -16,11 +16,11 @@ function BestSeller() {
     <div>
       <h2 className="BSeller"> BEST SELLER </h2>
       <div className="listflex">
-        <p> <Link to= "/Product"> All </Link> </p>
-        <p>Bags</p>
-        <p>Sneakers</p>
-        <p> Belt </p>
-        <p>Sunglasses</p>
+        <p className="li-BestSeller"> <Link to= "/Product"> All </Link> </p>
+        <p className="li-BestSeller">Bags</p>
+        <p className="li-BestSeller">Sneakers</p>
+        <p className="li-BestSeller"> Belt </p>
+        <p className="li-BestSeller">Sunglasses</p>
       </div>
       <div>
         <div className="productFlex">

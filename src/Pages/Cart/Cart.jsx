@@ -12,6 +12,8 @@ import ModalPay from "../../Pages/ModalPay/ModalPay";
 
 const Cart = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [count, setCount] = useState(0);
+  const [price, setPrice] = useState(0)
 
   const showModal = () => {
     setIsModalOpen(true);
@@ -22,8 +24,32 @@ const Cart = () => {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
+  const reduce = () => {
+    // setCount(count - 1);
+    setCount(prev => prev > 0 ? prev -1 : 0);
+  }
+const increase = () =>{
+  setCount(count+1);
+}
+
+const reduceItem2 = () =>{
+  setPrice(prev => prev > 0 ? prev -1:0)
+} 
+const increaseItem2 = () =>{
+  setPrice(price+1)
+}
+
+// const add  = (a,b) => a+b ;
+// }const add = (a, b) => a + b;
 
 
+// const Subtotal = () =>{
+//   setPrice(setPrice + setCount) 
+// }
+const item1 = 499* count;
+const item2 = price* 355;
+const subTotal = item1 + item2;
+const total = subTotal +20 
   return (
     <div>
       <Header />
@@ -38,9 +64,9 @@ const Cart = () => {
         <div className="cart-product">
           <p>Product</p>
           <div className="cart-product-flex">
-            <p>PRICE</p>
-            <p> QTY</p>
             <p>UNIT PRICE</p>
+            <p> QTY</p>
+            <p>PRICE</p>
           </div>
         </div>
         <div className="g">
@@ -50,11 +76,16 @@ const Cart = () => {
               <p>Nike Airmax 270 react</p>
             </div>
             <div className="price-qty">
-              <p>$998</p>
-              <p className="increase"> - 2 + </p>
               <p>$499</p>
+
+              <button onClick={reduce}>-</button>
+              {count}
+              <button onClick={increase}>+</button>
+              <p>${item1}</p>
             </div>
           </div>
+
+
 
           <div className="cart-product-flex1" id="flex1">
             <div className="image-flex">
@@ -62,12 +93,16 @@ const Cart = () => {
               <p>Nike Airmax 270 react</p>
             </div>
             <div className="price-qty">
-              <p>$998</p>
-              <p className="increase">- 2 +</p>
-              <p>$499</p>
+              <p>$355</p>
+              <button className="counter" onClick={reduceItem2}>-</button>
+              {price}
+              <button className="counter" onClick={increaseItem2}>+</button>
+              <p>{item2}</p>
             </div>
           </div>
         </div>
+
+
         <div className="input-search">
           <div>
             <label>
@@ -82,7 +117,7 @@ const Cart = () => {
               <p> Coupon </p>
             </div>
             <div>
-              <p>$998</p>
+              <p> ${subTotal} </p>
               <p>$20</p>
               <p> No </p>
             </div>
@@ -91,7 +126,7 @@ const Cart = () => {
         <div className="booking">
           <div className="flex-total">
             <p> TOTAL</p>
-            <p> $399 </p>
+            <p> ${total} </p>
           </div>
           <div>
             <button type="submit" className="btn-modal"onClick={showModal}>

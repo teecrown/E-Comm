@@ -13,12 +13,12 @@ const Home = () => {
     <div className="home">
       <Header />
        <Navbar />
-        <Hero/>
+         <Hero/>
       <Product/>
       <BestSeller/>
       <BlueSection/>
       <Footer/> 
-      <ModalPay/>
+      <ModalPay/> 
        
     </div>
   );
