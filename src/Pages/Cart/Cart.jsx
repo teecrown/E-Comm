@@ -49,7 +49,7 @@ const increaseItem2 = () =>{
 const item1 = 499* count;
 const item2 = price* 355;
 const subTotal = item1 + item2;
-const total = subTotal +20 
+const total = subTotal +20 ;// const total = add(item1, item2) + 20;
   return (
     <div>
       <Header />
